@@ -23,3 +23,16 @@ function greet() {
 }
 
 button.addEventListener("click", greet);
+
+const button2 = document.querySelector("button");
+
+function greet2(name) {
+    alert(`Hello again, nice to see you!` + name);
+}
+
+const nome = prompt("What is your name?");
+
+button2.addEventListener("click", function(){
+    greet2(nome);
+});
+
